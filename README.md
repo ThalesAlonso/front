@@ -47,6 +47,14 @@ index.html
 
 Mesmo assim, a opcao com `npx serve` e recomendada para testar de forma mais parecida com um deploy real.
 
+## Deploy
+
+O projeto esta publicado em:
+
+```text
+https://thalesalonso.github.io/front/
+```
+
 ## Como Testar O Fluxo
 
 1. Abra `http://localhost:3000`.
