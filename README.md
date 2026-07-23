@@ -1,12 +1,12 @@
 # FrontPro Essencial
 
-Projeto estatico de uma jornada de venda para um curso digital de frontend.
+Projeto estático de uma jornada de venda para um curso digital de frontend.
 
-O fluxo tem 3 paginas:
+O fluxo tem 3 páginas:
 
-- `index.html`: pagina inicial do produto.
+- `index.html`: página inicial do produto.
 - `upsell.html`: oferta complementar.
-- `obrigado.html`: confirmacao da compra.
+- `obrigado.html`: confirmação da compra.
 
 ## Tecnologias
 
@@ -17,7 +17,7 @@ O fluxo tem 3 paginas:
 
 ## Como Executar
 
-Voce precisa ter o Node.js instalado para usar o servidor local com `npx`.
+Você precisa ter o Node.js instalado para usar o servidor local com `npx`.
 
 Na raiz do projeto, rode:
 
@@ -37,19 +37,19 @@ Para parar o servidor, volte ao terminal e pressione:
 Ctrl + C
 ```
 
-## Opcao Sem Servidor
+## Opção Sem Servidor
 
-Como o projeto e estatico, tambem da para abrir o arquivo abaixo diretamente no navegador:
+Como o projeto é estático, também dá para abrir o arquivo abaixo diretamente no navegador:
 
 ```text
 index.html
 ```
 
-Mesmo assim, a opcao com `npx serve` e recomendada para testar de forma mais parecida com um deploy real.
+Mesmo assim, a opção com `npx serve` é recomendada para testar de forma mais parecida com um deploy real.
 
 ## Deploy
 
-O projeto esta publicado em:
+O projeto está publicado em:
 
 ```text
 https://thalesalonso.github.io/front/
@@ -59,12 +59,12 @@ https://thalesalonso.github.io/front/
 
 1. Abra `http://localhost:3000`.
 2. Clique em `Comprar agora`.
-3. Confira se abriu a pagina de oferta complementar.
-4. Aguarde alguns segundos ate a oferta completa aparecer.
+3. Confira se abriu a página de oferta complementar.
+4. Aguarde alguns segundos até a oferta completa aparecer.
 5. Clique em `Aceitar oferta complementar`.
-6. Confira se abriu a pagina de confirmacao.
+6. Confira se abriu a página de confirmação.
 
-## Como Validar O Codigo
+## Como Validar O Código
 
 Rode estes comandos na raiz do projeto:
 
@@ -75,17 +75,17 @@ npx --yes html-validate index.html upsell.html obrigado.html
 
 O primeiro comando valida a sintaxe do JavaScript.
 
-O segundo valida a estrutura HTML das paginas.
+O segundo valida a estrutura HTML das páginas.
 
 ## Checklist Visual
 
 Ao testar no navegador, confira:
 
-- A navegacao entre as 3 paginas funciona.
-- O carrossel responde aos botoes.
+- A navegação entre as 3 páginas funciona.
+- O carrossel responde aos botões.
 - A oferta complementar aparece depois do tempo configurado.
 - O layout funciona em celular, tablet e desktop.
-- O foco do teclado fica visivel ao usar `Tab`.
+- O foco do teclado fica visível ao usar `Tab`.
 
 ## Estrutura Do Projeto
 
@@ -112,7 +112,7 @@ Ao testar no navegador, confira:
 
 ## Lighthouse
 
-Evidencia da auditoria mobile:
+Evidência da auditoria mobile:
 
 ![Resumo Lighthouse](assets/img/lighthouse-summary.svg)
 
@@ -123,7 +123,7 @@ Resultado registrado em 2026-07-23:
 - Best Practices: 96.
 - SEO: 100.
 
-Relatorio compartilhavel pelo PageSpeed Insights:
+Relatório compartilhável pelo PageSpeed Insights:
 
 ```text
 https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fthalesalonso.github.io%2Ffront%2F
@@ -135,4 +135,4 @@ Para gerar uma nova auditoria:
 2. Abra o DevTools.
 3. Entre na aba `Lighthouse`.
 4. Escolha o modo `Mobile`.
-5. Gere o relatorio.
+5. Gere o relatório.

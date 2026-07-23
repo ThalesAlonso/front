@@ -341,7 +341,7 @@ h3 {
   position: absolute;
   left: 0;
   color: var(--color-primary);
-  content: "✓";
+  content: "\2713";
   font-weight: 800;
 }
 

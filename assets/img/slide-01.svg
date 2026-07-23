@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="680" height="420" viewBox="0 0 680 420" role="img" aria-labelledby="title desc">
-  <title id="title">Modulo HTML</title>
-  <desc id="desc">Representacao visual de uma estrutura HTML semantica.</desc>
+  <title id="title">Módulo HTML</title>
+  <desc id="desc">Representação visual de uma estrutura HTML semântica.</desc>
   <rect width="680" height="420" fill="#f7f7f3"/>
   <rect x="64" y="58" width="552" height="304" rx="18" fill="#ffffff" stroke="#d9ded8"/>
   <rect x="104" y="98" width="180" height="22" rx="11" fill="#176b5b"/>
