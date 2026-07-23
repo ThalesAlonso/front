@@ -112,17 +112,27 @@ Ao testar no navegador, confira:
 
 ## Lighthouse
 
-Para validar performance, acessibilidade, boas praticas e SEO:
+Evidencia da auditoria mobile:
+
+![Resumo Lighthouse](assets/img/lighthouse-summary.svg)
+
+Resultado registrado em 2026-07-23:
+
+- Performance: 100.
+- Accessibility: 96.
+- Best Practices: 96.
+- SEO: 100.
+
+Relatorio compartilhavel pelo PageSpeed Insights:
+
+```text
+https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fthalesalonso.github.io%2Ffront%2F
+```
+
+Para gerar uma nova auditoria:
 
 1. Abra o projeto no Chrome.
 2. Abra o DevTools.
 3. Entre na aba `Lighthouse`.
 4. Escolha o modo `Mobile`.
 5. Gere o relatorio.
-
-Metas recomendadas:
-
-- Performance: 90+.
-- Accessibility: 90+.
-- Best Practices: 90+.
-- SEO: 90+.

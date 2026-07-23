@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="360" viewBox="0 0 920 360" role="img" aria-labelledby="title desc">
+  <title id="title">Lighthouse audit summary</title>
+  <desc id="desc">Mobile Lighthouse scores for FrontPro Essencial: Performance 100, Accessibility 96, Best Practices 96, SEO 100.</desc>
+  <rect width="920" height="360" rx="18" fill="#101820"/>
+  <text x="48" y="64" fill="#f8fbfa" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">Lighthouse mobile audit</text>
+  <text x="48" y="100" fill="#b7c4bf" font-family="Arial, Helvetica, sans-serif" font-size="16">FrontPro Essencial - generated on 2026-07-23</text>
+  <g transform="translate(48 142)">
+    <rect width="180" height="150" rx="12" fill="#17211f" stroke="#2b3a36"/>
+    <text x="90" y="62" fill="#49b89f" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700">100</text>
+    <text x="90" y="104" fill="#f8fbfa" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">Performance</text>
+  </g>
+  <g transform="translate(260 142)">
+    <rect width="180" height="150" rx="12" fill="#17211f" stroke="#2b3a36"/>
+    <text x="90" y="62" fill="#49b89f" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700">96</text>
+    <text x="90" y="104" fill="#f8fbfa" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">Accessibility</text>
+  </g>
+  <g transform="translate(472 142)">
+    <rect width="180" height="150" rx="12" fill="#17211f" stroke="#2b3a36"/>
+    <text x="90" y="62" fill="#49b89f" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700">96</text>
+    <text x="90" y="104" fill="#f8fbfa" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">Best Practices</text>
+  </g>
+  <g transform="translate(684 142)">
+    <rect width="180" height="150" rx="12" fill="#17211f" stroke="#2b3a36"/>
+    <text x="90" y="62" fill="#49b89f" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700">100</text>
+    <text x="90" y="104" fill="#f8fbfa" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700">SEO</text>
+  </g>
+  <text x="48" y="330" fill="#b7c4bf" font-family="Arial, Helvetica, sans-serif" font-size="14">Audited with Lighthouse mobile against the current local build.</text>
+</svg>
