@@ -25,7 +25,7 @@
 
   function initThemeToggle() {
     var toggle = document.querySelector("[data-theme-toggle]");
-    var icon = document.querySelector("[data-theme-icon]");
+    var label = document.querySelector("[data-theme-label]");
 
     if (!toggle) {
       return;
@@ -36,8 +36,8 @@
       document.documentElement.dataset.theme = theme;
       toggle.setAttribute("aria-label", isDark ? "Ativar modo claro" : "Ativar modo escuro");
 
-      if (icon) {
-        icon.textContent = isDark ? "L" : "D";
+      if (label) {
+        label.textContent = isDark ? "Claro" : "Escuro";
       }
     }
 
