@@ -709,7 +709,6 @@ h3 {
     grid-template-columns: 1.02fr 0.98fr;
   }
 
-  .feature-grid .section-heading,
   .steps-grid .section-heading {
     grid-column: auto;
   }
