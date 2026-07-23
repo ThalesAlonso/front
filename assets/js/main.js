@@ -23,6 +23,33 @@
     writeJourney(journey);
   }
 
+  function initThemeToggle() {
+    var toggle = document.querySelector("[data-theme-toggle]");
+    var icon = document.querySelector("[data-theme-icon]");
+
+    if (!toggle) {
+      return;
+    }
+
+    function applyTheme(theme) {
+      var isDark = theme === "dark";
+      document.documentElement.dataset.theme = theme;
+      toggle.setAttribute("aria-label", isDark ? "Ativar modo claro" : "Ativar modo escuro");
+
+      if (icon) {
+        icon.textContent = isDark ? "L" : "D";
+      }
+    }
+
+    applyTheme(document.documentElement.dataset.theme || "light");
+
+    toggle.addEventListener("click", function () {
+      var nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+      localStorage.setItem("frontpro-theme", nextTheme);
+      applyTheme(nextTheme);
+    });
+  }
+
   function initJourneyLinks() {
     var links = document.querySelectorAll("[data-track-step]");
 
@@ -138,6 +165,7 @@
   }
 
   document.addEventListener("DOMContentLoaded", function () {
+    initThemeToggle();
     initJourneyLinks();
     initCarousel();
     initUpsellReveal();

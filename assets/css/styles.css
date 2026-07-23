@@ -1,14 +1,24 @@
 :root {
+  color-scheme: light;
   --color-page: #f7f7f3;
   --color-surface: #ffffff;
   --color-surface-strong: #101820;
   --color-text: #18212b;
   --color-muted: #5e6a73;
   --color-border: #d9ded8;
+  --color-section-muted: #ecefe8;
+  --color-final-cta: #dfe8df;
+  --color-reveal: #fffdf6;
+  --color-video: #0b1117;
+  --color-hero-gradient-start: #f7f7f3;
+  --color-hero-gradient-end: #ecefe8;
+  --color-media-soft: #dde8e2;
   --color-primary: #176b5b;
   --color-primary-dark: #0f4b40;
+  --color-price: #0f4b40;
   --color-accent: #e2b044;
   --color-focus: #1f7ae0;
+  --header-bg: rgba(247, 247, 243, 0.94);
   --shadow-soft: 0 18px 45px rgba(20, 33, 39, 0.12);
   --radius-sm: 6px;
   --radius-md: 8px;
@@ -21,6 +31,30 @@
   --space-6: 3rem;
   --space-7: 4.5rem;
   --font-body: Arial, Helvetica, sans-serif;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-page: #0f1514;
+  --color-surface: #17211f;
+  --color-surface-strong: #07100e;
+  --color-text: #eef5f1;
+  --color-muted: #b7c4bf;
+  --color-border: #2b3a36;
+  --color-section-muted: #121c1a;
+  --color-final-cta: #14231f;
+  --color-reveal: #171f1c;
+  --color-video: #050908;
+  --color-hero-gradient-start: #0f1514;
+  --color-hero-gradient-end: #121c1a;
+  --color-media-soft: #1e312d;
+  --color-primary: #49b89f;
+  --color-primary-dark: #8ee0ce;
+  --color-price: #8ee0ce;
+  --color-accent: #f0c766;
+  --color-focus: #78b7ff;
+  --header-bg: rgba(15, 21, 20, 0.94);
+  --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.32);
 }
 
 * {
@@ -94,7 +128,7 @@ select {
 }
 
 .section-muted {
-  background: #ecefe8;
+  background: var(--color-section-muted);
 }
 
 .section-band {
@@ -106,7 +140,7 @@ select {
   position: sticky;
   top: 0;
   z-index: 10;
-  background: rgba(247, 247, 243, 0.94);
+  background: var(--header-bg);
   border-bottom: 1px solid var(--color-border);
   backdrop-filter: blur(14px);
 }
@@ -152,6 +186,19 @@ select {
 
 .site-nav a:hover {
   color: var(--color-primary);
+}
+
+.theme-toggle {
+  display: inline-grid;
+  width: 2.5rem;
+  height: 2.5rem;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background: var(--color-surface);
+  color: var(--color-text);
+  cursor: pointer;
+  font-weight: 800;
 }
 
 .hero {
@@ -347,7 +394,7 @@ h3 {
 
 .carousel-slide img {
   border-radius: var(--radius-sm);
-  background: #dde8e2;
+  background: var(--color-media-soft);
 }
 
 .carousel-slide p:last-child {
@@ -445,7 +492,7 @@ h3 {
 }
 
 .final-cta {
-  background: #dfe8df;
+  background: var(--color-final-cta);
 }
 
 .final-cta-grid {
@@ -487,7 +534,7 @@ h3 {
   margin-top: var(--space-4);
   overflow: hidden;
   border-radius: var(--radius-md);
-  background: #0b1117;
+  background: var(--color-video);
   box-shadow: var(--shadow-soft);
   aspect-ratio: 16 / 9;
 }
@@ -507,7 +554,7 @@ h3 {
 }
 
 .reveal-offer {
-  background: #fffdf6;
+  background: var(--color-reveal);
 }
 
 .offer-grid {
@@ -523,12 +570,12 @@ h3 {
 .price-box strong {
   display: inline-block;
   margin-top: var(--space-1);
-  color: var(--color-primary-dark);
+  color: var(--color-price);
   font-size: 2rem;
 }
 
 .thanks-section {
-  background: linear-gradient(180deg, #f7f7f3 0%, #ecefe8 100%);
+  background: linear-gradient(180deg, var(--color-hero-gradient-start) 0%, var(--color-hero-gradient-end) 100%);
 }
 
 .thanks-grid {
