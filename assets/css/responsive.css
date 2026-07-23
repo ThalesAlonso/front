@@ -1,0 +1,121 @@
+@media (min-width: 720px) {
+  .site-nav {
+    display: flex;
+  }
+
+  .hero-grid,
+  .carousel-slide,
+  .offer-grid,
+  .thanks-grid,
+  .info-grid,
+  .guarantee-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .feature-grid,
+  .testimonial-grid,
+  .steps-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .feature-grid .section-heading,
+  .steps-grid .section-heading {
+    grid-column: 1 / -1;
+  }
+
+  .carousel-viewport {
+    min-height: 0;
+  }
+}
+
+@media (min-width: 1040px) {
+  .hero {
+    padding-block: var(--space-7);
+  }
+
+  .hero-grid {
+    grid-template-columns: 1.02fr 0.98fr;
+  }
+
+  .steps-grid .section-heading {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  :root {
+    --gutter: 0.75rem;
+    --space-7: 3.25rem;
+  }
+
+  .container,
+  .narrow {
+    width: min(100% - (var(--gutter) * 2), var(--container));
+  }
+
+  .section {
+    padding-block: var(--space-5);
+  }
+
+  .header-grid {
+    min-height: 4rem;
+  }
+
+  .brand {
+    font-size: 0.95rem;
+  }
+
+  .theme-toggle {
+    min-height: 2.35rem;
+    gap: 0.58rem;
+    padding: 0.22rem 0.68rem 0.22rem 0.22rem;
+  }
+
+  .language-toggle {
+    min-height: 2.35rem;
+    padding-inline: 0.68rem;
+  }
+
+  .theme-toggle-icon {
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+
+  .theme-toggle-label {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    max-width: 100%;
+    font-size: clamp(2rem, 12vw, 3.25rem);
+  }
+
+  h2 {
+    font-size: clamp(1.55rem, 8vw, 2.35rem);
+  }
+
+  .hero-actions,
+  .final-cta-grid {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
+  .carousel-viewport {
+    min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
