@@ -19,14 +19,14 @@
       (function () {
         var theme = localStorage.getItem("frontpro-theme");
         var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        document.documentElement.dataset.theme = theme || (prefersDark ? "dark" : "light");
+        document.documentElement.dataset.theme = theme || (prefersDark  "dark" : "light");
       })();
     </script>
-    <link rel="stylesheet" href="assets/css/styles.css?v=20260723-2">
-    <script src="assets/js/main.js?v=20260723-2" defer></script>
+    <link rel="stylesheet" href="assets/css/styles.cssv=20260723-4">
+    <script src="assets/js/main.jsv=20260723-4" defer></script>
   </head>
   <body data-page="upsell">
-    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <a class="skip-link" href="#conteudo" data-i18n="common.skip">Pular para o conteúdo</a>
 
     <header class="site-header">
       <div class="container header-grid">
@@ -34,23 +34,28 @@
           <span class="brand-mark" aria-hidden="true">F</span>
           <span>FrontPro Essencial</span>
         </a>
-        <nav class="site-nav" aria-label="Navegacao principal">
-          <a href="index.html">Início</a>
-          <a href="obrigado.html">Confirmação</a>
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="index.html" data-i18n="nav.home">Início</a>
+          <a href="obrigado.html" data-i18n="nav.confirmation">Confirmação</a>
         </nav>
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Ativar modo escuro">
-          <span class="theme-toggle-icon" aria-hidden="true" data-theme-icon>☀</span>
-          <span class="theme-toggle-label" data-theme-label>Light</span>
-        </button>
+        <div class="header-actions">
+          <button class="language-toggle" type="button" data-language-toggle aria-label="Switch language">
+            <span data-language-label>PT</span>
+          </button>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Ativar modo escuro">
+            <span class="theme-toggle-icon" aria-hidden="true" data-theme-icon>&#9790;</span>
+            <span class="theme-toggle-label" data-theme-label>Light</span>
+          </button>
+        </div>
       </div>
     </header>
 
     <main id="conteudo">
       <section class="section upsell-hero">
         <div class="container narrow">
-          <p class="eyebrow">Compra inicial concluída</p>
-          <h1>Antes de finalizar: quer revisar seu projeto com critério senior?</h1>
-          <p class="hero-text">
+          <p class="eyebrow" data-i18n="upsell.hero.eyebrow">Compra inicial concluída</p>
+          <h1 data-i18n="upsell.hero.title">Antes de finalizar: quer revisar seu projeto com critério senior?</h1>
+          <p class="hero-text" data-i18n="upsell.hero.text">
             A <strong>Mentoria Express FrontPro</strong> e uma oferta complementar para transformar
             seu projeto em uma entrega mais consistente, acessível e performática.
           </p>
@@ -65,7 +70,7 @@
             ></iframe>
           </div>
 
-          <p class="video-note">
+          <p class="video-note" data-i18n="upsell.video.note">
             Assista à apresentação para conhecer os detalhes da mentoria e decidir com segurança.
           </p>
         </div>
@@ -73,9 +78,9 @@
 
       <section class="section section-muted" aria-labelledby="pitch-title">
         <div class="container narrow">
-          <p class="eyebrow">Complemento recomendado</p>
-          <h2 id="pitch-title">Você já tem o curso. Agora pode acelerar a revisão da entrega.</h2>
-          <p>
+          <p class="eyebrow" data-i18n="upsell.pitch.eyebrow">Complemento recomendado</p>
+          <h2 id="pitch-title" data-i18n="upsell.pitch.title">Você já tem o curso. Agora pode acelerar a revisão da entrega.</h2>
+          <p data-i18n="upsell.pitch.text">
             Na mentoria, o aluno recebe um roteiro de revisão para encontrar falhas de
             responsividade, semântica, acessibilidade, legibilidade de CSS e comportamento em JS.
           </p>
@@ -86,24 +91,24 @@
         <section class="section reveal-offer">
           <div class="container offer-grid">
             <div>
-              <p class="eyebrow">Oferta complementar</p>
+              <p class="eyebrow" data-i18n="upsell.offer.eyebrow">Oferta complementar</p>
               <h2>Mentoria Express FrontPro</h2>
-              <p>
+              <p data-i18n="upsell.offer.text">
                 Uma revisão guiada para lapidar seu projeto final com foco em UX, responsividade,
                 acessibilidade, SEO técnico e performance no Lighthouse.
               </p>
               <a class="button button-primary" href="obrigado.html">
-                Aceitar oferta complementar
+                <span data-i18n="upsell.offer.cta">Aceitar oferta complementar</span>
               </a>
             </div>
 
             <div class="offer-panel">
-              <h3>O que entra na oferta</h3>
+              <h3 data-i18n="upsell.includes.title">O que entra na oferta</h3>
               <ul class="check-list">
-                <li>Checklist de revisão visual e técnica.</li>
-                <li>Prioridades para melhorar Lighthouse mobile.</li>
-                <li>Roteiro de acessibilidade por teclado.</li>
-                <li>Guia de organização para HTML, CSS e JS puro.</li>
+                <li data-i18n="upsell.includes.item1">Checklist de revisão visual e técnica.</li>
+                <li data-i18n="upsell.includes.item2">Prioridades para melhorar Lighthouse mobile.</li>
+                <li data-i18n="upsell.includes.item3">Roteiro de acessibilidade por teclado.</li>
+                <li data-i18n="upsell.includes.item4">Guia de organização para HTML, CSS e JS puro.</li>
               </ul>
             </div>
           </div>
@@ -120,38 +125,38 @@
       >
         <div class="container offer-grid">
           <div>
-            <p class="eyebrow">Oferta liberada</p>
+            <p class="eyebrow" data-i18n="upsell.reveal.eyebrow">Oferta liberada</p>
             <h2 tabindex="-1" data-reveal-title>Mentoria Express FrontPro</h2>
-            <p>
+            <p data-i18n="upsell.offer.text">
               Uma revisão guiada para lapidar seu projeto final com foco em UX, responsividade,
               acessibilidade, SEO técnico e performance no Lighthouse.
             </p>
             <a class="button button-primary" href="obrigado.html" data-track-step="upsell-accepted">
-              Aceitar oferta complementar
+              <span data-i18n="upsell.offer.cta">Aceitar oferta complementar</span>
             </a>
           </div>
 
           <div class="offer-panel">
-            <h3>O que entra na oferta</h3>
+            <h3 data-i18n="upsell.includes.title">O que entra na oferta</h3>
             <ul class="check-list">
-              <li>Checklist de revisão visual e técnica.</li>
-              <li>Prioridades para melhorar Lighthouse mobile.</li>
-              <li>Roteiro de acessibilidade por teclado.</li>
-              <li>Guia de organização para HTML, CSS e JS puro.</li>
+              <li data-i18n="upsell.includes.item1">Checklist de revisão visual e técnica.</li>
+              <li data-i18n="upsell.includes.item2">Prioridades para melhorar Lighthouse mobile.</li>
+              <li data-i18n="upsell.includes.item3">Roteiro de acessibilidade por teclado.</li>
+              <li data-i18n="upsell.includes.item4">Guia de organização para HTML, CSS e JS puro.</li>
             </ul>
           </div>
         </div>
 
         <div class="container guarantee-grid guarantee-compact">
           <div>
-            <h3>Garantia também no complemento</h3>
-            <p>
+            <h3 data-i18n="upsell.guarantee.title">Garantia também no complemento</h3>
+            <p data-i18n="upsell.guarantee.text">
               A oferta complementar segue a mesma garantia: 7 dias para conhecer o material
               e decidir com tranquilidade.
             </p>
           </div>
           <p class="price-box">
-            Oferta especial<br>
+            <span data-i18n="upsell.price.label">Oferta especial</span><br>
             <strong>R$ 97</strong>
           </p>
         </div>
@@ -161,7 +166,7 @@
     <footer class="site-footer">
       <div class="container footer-grid">
         <p>&copy; 2026 FrontPro Essencial.</p>
-        <a href="index.html">Voltar para o início</a>
+        <a href="index.html" data-i18n="common.backHome">Voltar para o início</a>
       </div>
     </footer>
   </body>
