@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Obrigado pela compra | FrontPro Essencial</title>
+    <meta
+      name="description"
+      content="Página de agradecimento da jornada FrontPro Essencial com resumo da compra e próximos passos."
+    >
+    <meta property="og:title" content="Obrigado | FrontPro Essencial">
+    <meta
+      property="og:description"
+      content="Resumo da jornada de compra do curso FrontPro Essencial."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/hero.svg">
+    <script>
+      (function () {
+        var theme = localStorage.getItem("frontpro-theme");
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = theme || (prefersDark ? "dark" : "light");
+      })();
+    </script>
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260723-6">
+    <script type="module" src="assets/js/main.js?v=20260723-6"></script>
+  </head>
+  <body data-page="thanks">
+    <a class="skip-link" href="#conteudo" data-i18n="common.skip">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="container header-grid">
+        <a class="brand" href="index.html" aria-label="FrontPro Essencial, início">
+          <span class="brand-mark" aria-hidden="true">F</span>
+          <span>FrontPro Essencial</span>
+        </a>
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="index.html" data-i18n="nav.home">Início</a>
+          <a href="upsell.html" data-i18n="nav.offer">Oferta complementar</a>
+        </nav>
+        <div class="header-actions">
+          <button class="language-toggle" type="button" data-language-toggle aria-label="Switch language">
+            <span data-language-label>PT</span>
+          </button>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Ativar modo escuro">
+            <span class="theme-toggle-icon" aria-hidden="true" data-theme-icon>&#9790;</span>
+            <span class="theme-toggle-label" data-theme-label>Light</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="section thanks-section">
+        <div class="container thanks-grid">
+          <div>
+            <p class="eyebrow" data-i18n="thanks.hero.eyebrow">Jornada concluída</p>
+            <h1 data-i18n="thanks.hero.title">Obrigado pela compra.</h1>
+            <p class="hero-text" data-i18n="thanks.hero.text">
+              Seu acesso ao FrontPro Essencial foi confirmado com sucesso. Abaixo está o resumo
+              da jornada e os próximos passos recomendados.
+            </p>
+            <a class="button button-secondary" href="index.html" data-i18n="common.backHome">Voltar para o início</a>
+          </div>
+
+          <aside class="summary-card" aria-labelledby="resumo-title">
+            <h2 id="resumo-title" data-i18n="thanks.summary.title">Resumo da compra</h2>
+            <ul class="summary-list" data-summary-list>
+              <li>FrontPro Essencial</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section-muted" aria-labelledby="proximos-title">
+        <div class="container steps-grid">
+          <div class="section-heading section-heading-left">
+            <p class="eyebrow" data-i18n="thanks.steps.eyebrow">Próximos passos</p>
+            <h2 id="proximos-title" data-i18n="thanks.steps.title">Continue a jornada com calma e método.</h2>
+          </div>
+          <article class="step-card">
+            <span>1</span>
+            <h3 data-i18n="thanks.step1.title">Verifique seu email</h3>
+            <p data-i18n="thanks.step1.text">Os dados de acesso chegam na sua caixa de entrada junto com as orientações iniciais.</p>
+          </article>
+          <article class="step-card">
+            <span>2</span>
+            <h3 data-i18n="thanks.step2.title">Prepare o ambiente</h3>
+            <p data-i18n="thanks.step2.text">Separe navegador, editor de código e ferramentas de auditoria para acompanhar o curso.</p>
+          </article>
+          <article class="step-card">
+            <span>3</span>
+            <h3 data-i18n="thanks.step3.title">Valide sua entrega</h3>
+            <p data-i18n="thanks.step3.text">Use responsividade, teclado, Lighthouse e leitura de código como critérios de qualidade.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="info-title">
+        <div class="container info-grid">
+          <div>
+            <h2 id="info-title" data-i18n="thanks.info.title">Informações adicionais</h2>
+            <p data-i18n="thanks.info.text">
+              A jornada foi desenhada para entregar clareza desde a compra até o primeiro acesso,
+              com orientações simples e suporte direto para quem está começando.
+            </p>
+          </div>
+          <div class="support-box">
+            <h3 data-i18n="thanks.support.title">Suporte FrontPro</h3>
+            <p>Email: suporte@frontproessencial.com.br</p>
+            <p data-i18n="thanks.support.release">Prazo de liberação: imediato.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>&copy; 2026 FrontPro Essencial.</p>
+        <a href="#conteudo" data-i18n="common.backTop">Voltar ao topo</a>
+      </div>
+    </footer>
+  </body>
+</html>

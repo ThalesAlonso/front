@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FrontPro Essencial | Frontend sem framework</title>
+    <meta
+      name="description"
+      content="Curso digital para dominar HTML, CSS e JavaScript puro com acessibilidade, responsividade, SEO e performance."
+    >
+    <meta property="og:title" content="FrontPro Essencial">
+    <meta
+      property="og:description"
+      content="Aprenda frontend pela base da web: HTML semântico, CSS moderno e JavaScript Vanilla."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/hero.svg">
+    <script>
+      (function () {
+        var theme = localStorage.getItem("frontpro-theme");
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = theme || (prefersDark ? "dark" : "light");
+      })();
+    </script>
+    <link rel="preload" href="assets/css/styles.css?v=20260723-6" as="style">
+    <link rel="stylesheet" href="assets/css/styles.css?v=20260723-6">
+    <script type="module" src="assets/js/main.js?v=20260723-6"></script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#conteudo" data-i18n="common.skip">Pular para o conteúdo</a>
+
+    <header class="site-header">
+      <div class="container header-grid">
+        <a class="brand" href="index.html" aria-label="FrontPro Essencial, início">
+          <span class="brand-mark" aria-hidden="true">F</span>
+          <span>FrontPro Essencial</span>
+        </a>
+        <nav class="site-nav" aria-label="Navegação principal">
+          <a href="#modulos" data-i18n="nav.modules">Módulos</a>
+          <a href="#garantia" data-i18n="nav.guarantee">Garantia</a>
+          <a href="#depoimentos" data-i18n="nav.testimonials">Depoimentos</a>
+        </nav>
+        <div class="header-actions">
+          <button class="language-toggle" type="button" data-language-toggle aria-label="Switch language">
+            <span data-language-label>PT</span>
+          </button>
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Ativar modo escuro">
+            <span class="theme-toggle-icon" aria-hidden="true" data-theme-icon>&#9790;</span>
+            <span class="theme-toggle-label" data-theme-label>Light</span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="home.hero.eyebrow">HTML, CSS e JavaScript puro</p>
+            <h1 data-i18n="home.hero.title">Domine frontend pela base, sem esconder a complexidade atrás de framework.</h1>
+            <p class="hero-text" data-i18n="home.hero.text">
+              Um curso digital direto ao ponto para criar interfaces rápidas, acessíveis,
+              responsivas e fáceis de manter usando apenas a tríade da web.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="upsell.html" data-track-step="initial-purchase">
+                <span data-i18n="common.buy">Comprar agora</span>
+              </a>
+              <a class="button button-secondary" href="#modulos" data-i18n="home.hero.secondary">Ver conteúdo</a>
+            </div>
+            <ul class="trust-list" aria-label="Destaques do curso">
+              <li data-i18n="home.trust.guarantee">7 dias de garantia</li>
+              <li data-i18n="home.trust.access">Acesso imediato</li>
+              <li data-i18n="home.trust.project">Projeto prático completo</li>
+            </ul>
+          </div>
+          <figure class="hero-media">
+            <img
+              src="assets/img/hero.svg"
+              width="720"
+              height="540"
+              alt="Tela de curso FrontPro Essencial com modulos de HTML, CSS e JavaScript"
+            >
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section-muted" id="modulos" aria-labelledby="modulos-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="home.modules.eyebrow">Jornada prática</p>
+            <h2 id="modulos-title" data-i18n="home.modules.title">Três fundamentos, uma entrega profissional.</h2>
+          </div>
+
+          <section
+            class="carousel"
+            data-carousel
+            aria-roledescription="carrossel"
+            aria-label="Módulos do FrontPro Essencial"
+          >
+            <div class="carousel-viewport">
+              <article class="carousel-slide is-active" data-slide>
+                <img
+                  src="assets/img/slide-01.svg"
+                  width="680"
+                  height="420"
+                  alt="Módulo de HTML semântico com estrutura de página"
+                  loading="lazy"
+                >
+                <div>
+                  <p class="eyebrow" data-i18n="home.slide1.eyebrow">Módulo 01</p>
+                  <h3 data-i18n="home.slide1.title">HTML que comunica estrutura</h3>
+                  <p data-i18n="home.slide1.text">Semântica, hierarquia de títulos, metadados, links reais e base para SEO.</p>
+                </div>
+              </article>
+
+              <article class="carousel-slide" data-slide hidden>
+                <img
+                  src="assets/img/slide-02.svg"
+                  width="680"
+                  height="420"
+                  alt="Módulo de CSS responsivo com grid e componentes"
+                  loading="lazy"
+                >
+                <div>
+                  <p class="eyebrow" data-i18n="home.slide2.eyebrow">Módulo 02</p>
+                  <h3 data-i18n="home.slide2.title">CSS limpo e responsivo</h3>
+                  <p data-i18n="home.slide2.text">Mobile first, tokens, Grid, Flexbox, estados visuais e componentes reutilizáveis.</p>
+                </div>
+              </article>
+
+              <article class="carousel-slide" data-slide hidden>
+                <img
+                  src="assets/img/slide-03.svg"
+                  width="680"
+                  height="420"
+                  alt="Módulo de JavaScript Vanilla com comportamento de interface"
+                  loading="lazy"
+                >
+                <div>
+                  <p class="eyebrow" data-i18n="home.slide3.eyebrow">Módulo 03</p>
+                  <h3 data-i18n="home.slide3.title">JavaScript sem peso extra</h3>
+                  <p data-i18n="home.slide3.text">DOM, eventos, carrossel acessível, estado de jornada e interações progressivas.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="carousel-controls" role="group" aria-label="Controles do carrossel">
+              <button class="icon-button" type="button" data-carousel-prev aria-label="Slide anterior">
+                <span aria-hidden="true">&lt;</span>
+              </button>
+              <div class="carousel-dots" data-carousel-dots role="group" aria-label="Selecionar slide"></div>
+              <button class="icon-button" type="button" data-carousel-next aria-label="Próximo slide">
+                <span aria-hidden="true">&gt;</span>
+              </button>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="beneficios-title">
+        <div class="container feature-grid">
+          <div class="section-heading section-heading-left">
+            <p class="eyebrow" data-i18n="home.benefits.eyebrow">Por que funciona</p>
+            <h2 id="beneficios-title" data-i18n="home.benefits.title">O foco é entender a web antes da ferramenta.</h2>
+          </div>
+          <article class="feature-card">
+            <h3 data-i18n="home.benefit1.title">Código legível</h3>
+            <p data-i18n="home.benefit1.text">Funções pequenas, nomes claros e separação real entre estrutura, estilo e comportamento.</p>
+          </article>
+          <article class="feature-card">
+            <h3 data-i18n="home.benefit2.title">Interface adaptável</h3>
+            <p data-i18n="home.benefit2.text">Layouts que nascem no mobile e evoluem com media queries simples e previsíveis.</p>
+          </article>
+          <article class="feature-card">
+            <h3 data-i18n="home.benefit3.title">Entrega mensurável</h3>
+            <p data-i18n="home.benefit3.text">Checklist de acessibilidade, SEO e Lighthouse para provar qualidade além do visual.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-band" id="garantia" aria-labelledby="garantia-title">
+        <div class="container guarantee-grid">
+          <div>
+            <p class="eyebrow" data-i18n="home.guarantee.eyebrow">Compra tranquila</p>
+            <h2 id="garantia-title" data-i18n="home.guarantee.title">Garantia incondicional de 7 dias.</h2>
+            <p data-i18n="home.guarantee.text">
+              Se o curso não ajudar você a enxergar HTML, CSS e JavaScript com mais clareza,
+              a compra pode ser cancelada dentro do período de garantia.
+            </p>
+          </div>
+          <ul class="check-list">
+            <li data-i18n="home.guarantee.item1">Acesso imediato ao conteúdo.</li>
+            <li data-i18n="home.guarantee.item2">Projeto prático de ponta a ponta.</li>
+            <li data-i18n="home.guarantee.item3">Material focado em manutenção e performance.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="depoimentos" aria-labelledby="depoimentos-title">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="home.testimonials.eyebrow">Histórias de alunos</p>
+            <h2 id="depoimentos-title" data-i18n="home.testimonials.title">Quem voltou para a base construiu melhor.</h2>
+          </div>
+          <div class="testimonial-grid">
+            <article class="testimonial">
+              <div class="stars" role="img" aria-label="Avaliação 5 de 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p data-i18n="home.testimonial1.text">"Parei de montar tela no impulso. Agora penso em semântica, fluxo e manutenção."</p>
+              <strong>Ana Martins</strong>
+            </article>
+            <article class="testimonial">
+              <div class="stars" role="img" aria-label="Avaliação 4.8 de 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p data-i18n="home.testimonial2.text">"O módulo de responsividade foi exatamente o que eu precisava para ganhar critério."</p>
+              <strong>Rafael Costa</strong>
+            </article>
+            <article class="testimonial">
+              <div class="stars" role="img" aria-label="Avaliação 5 de 5">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <p data-i18n="home.testimonial3.text">"Gostei porque o projeto não depende de biblioteca para parecer profissional."</p>
+              <strong>Beatriz Lima</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section final-cta" aria-labelledby="cta-title">
+        <div class="container final-cta-grid">
+          <div>
+            <p class="eyebrow" data-i18n="home.cta.eyebrow">Pronto para praticar?</p>
+            <h2 id="cta-title" data-i18n="home.cta.title">Comece com a base certa.</h2>
+            <p data-i18n="home.cta.text">Garanta seu acesso e conheça a recomendação complementar para acelerar sua evolução.</p>
+          </div>
+          <a class="button button-primary" href="upsell.html" data-track-step="initial-purchase">
+            <span data-i18n="common.buy">Comprar agora</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <p>&copy; 2026 FrontPro Essencial.</p>
+        <a href="#conteudo" data-i18n="common.backTop">Voltar ao topo</a>
+      </div>
+    </footer>
+  </body>
+</html>
